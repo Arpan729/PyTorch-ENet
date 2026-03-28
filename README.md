@@ -1,85 +1,74 @@
-# PyTorch-ENet
+# PyTorch-ENet for CamVid (11-Class)
 
-PyTorch (v1.1.0) implementation of [*ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation*](https://arxiv.org/abs/1606.02147), ported from the lua-torch implementation [ENet-training](https://github.com/e-lab/ENet-training) created by the authors.
+A PyTorch implementation of ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation, with fixes for modern PyTorch and CamVid 11-class dataset.
 
-This implementation has been tested on the CamVid and Cityscapes datasets. Currently, a pre-trained version of the model trained in CamVid and Cityscapes is available [here](https://github.com/davidtvs/PyTorch-ENet/tree/master/save).
+## Overview
 
-|                               Dataset                                | Classes <sup>1</sup> | Input resolution | Batch size | Epochs |   Mean IoU (%)    | GPU memory (GiB) | Training time (hours)<sup>2</sup> |
-| :------------------------------------------------------------------: | :------------------: | :--------------: | :--------: | :----: | :---------------: | :--------------: | :-------------------------------: |
-| [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/) |          11          |     480x360      |     10     |  300   | 52.1<sup>3</sup> |       4.2        |                 1                 |
-|          [Cityscapes](https://www.cityscapes-dataset.com/)           |          19          |     1024x512     |     4      |  300   | 59.5<sup>4</sup> |       5.4        |                20                 |
+This repository is a fork of [davidtvs/PyTorch-ENet](https://github.com/davidtvs/PyTorch-ENet) with significant updates to make it compatible with:
+- Modern PyTorch (2.x)
+- CamVid dataset reduced to **11 semantic classes + unlabeled**
+- Windows environment
+- Single-channel grayscale labels (class indices)
 
-<sup>1</sup> When referring to the number of classes, the void/unlabeled class is always excluded.<br/>
-<sup>2</sup> These are just for reference. Implementation, datasets, and hardware changes can lead to very different results. Reference hardware: Nvidia GTX 1070 and an AMD Ryzen 5 3600 3.6GHz. You can also train for 100 epochs or so and get similar mean IoU (± 2%).<br/>
-<sup>3</sup> Test set.<br/>
-<sup>4</sup> Validation set.
+## Key Fixes Applied
 
-## Installation
+- Fixed label shape issues (`[B, 3, H, W]` → `[B, H, W]`)
+- Updated `LongTensorToRGBPIL` for proper visualization
+- Fixed `.next()` iterator deprecation (`iter().next()` → `next(iter())`)
+- Added proper `ignore_index=255` handling for unlabeled pixels
+- Resolved class_weights mismatch between original 32-class and 11-class setup
+- Improved checkpoint loading for PyTorch 2.6+
+- Fixed multiprocessing issues on Windows (`num_workers=0`)
 
-### Local pip
+## Requirements
 
-1. Python 3 and pip
-2. Set up a virtual environment (optional, but recommended)
-3. Install dependencies using pip: `pip install -r requirements.txt`
+- Python 3.8+
+- PyTorch 2.x (CPU version)
+- torchvision
+- Pillow
+- NumPy
+- Matplotlib
 
-### Docker image
+## Dataset Setup (CamVid 11-Class)
 
-1. Build the image: `docker build -t enet .`
-2. Run: `docker run -it --gpus all --ipc host enet`
+1. Place your CamVid dataset in `datasets/CamVid/`
+2. Folder structure should be:
+datasets/CamVid/
+├── train/
+├── val/
+├── test/
+├── train_labels/     ← grayscale labels (values 0-10 + 255)
+├── val_labels/
+└── test_labels/
+text**Note**: Labels must be single-channel grayscale images where pixel values represent class indices.
 
-## Usage
+## Training
 
-Run [``main.py``](https://github.com/davidtvs/PyTorch-ENet/blob/master/main.py), the main script file used for training and/or testing the model. The following options are supported:
+```bash
+python main.py -m train \
+ --save-dir save/ENet_CamVid_train \
+ --name ENet_CamVid \
+ --dataset camvid \
+ --dataset-dir datasets/CamVid/ \
+ --batch-size 8 \
+ --epochs 200 \
+ --learning-rate 0.0005 \
+ --workers 0
+Testing
+Bashpython main.py -m test \
+    --save-dir save/ENet_CamVid_train \
+    --name ENet_CamVid \
+    --dataset camvid \
+    --dataset-dir datasets/CamVid/ \
+    --batch-size 8 \
+    --workers 0
+Features
 
-```
-python main.py [-h] [--mode {train,test,full}] [--resume]
-               [--batch-size BATCH_SIZE] [--epochs EPOCHS]
-               [--learning-rate LEARNING_RATE] [--lr-decay LR_DECAY]
-               [--lr-decay-epochs LR_DECAY_EPOCHS]
-               [--weight-decay WEIGHT_DECAY] [--dataset {camvid,cityscapes}]
-               [--dataset-dir DATASET_DIR] [--height HEIGHT] [--width WIDTH]
-               [--weighing {enet,mfb,none}] [--with-unlabeled]
-               [--workers WORKERS] [--print-step] [--imshow-batch]
-               [--device DEVICE] [--name NAME] [--save-dir SAVE_DIR]
-```
+Real-time semantic segmentation using ENet
+Support for CamVid 11-class + unlabeled
+Proper handling of void/unlabeled pixels (255)
+Visualization of predictions
+Checkpoint saving and resuming
 
-For help on the optional arguments run: ``python main.py -h``
-
-
-### Examples: Training
-
-```
-python main.py -m train --save-dir save/folder/ --name model_name --dataset name --dataset-dir path/root_directory/
-```
-
-
-### Examples: Resuming training
-
-```
-python main.py -m train --resume True --save-dir save/folder/ --name model_name --dataset name --dataset-dir path/root_directory/
-```
-
-
-### Examples: Testing
-
-```
-python main.py -m test --save-dir save/folder/ --name model_name --dataset name --dataset-dir path/root_directory/
-```
-
-
-## Project structure
-
-### Folders
-
-- [``data``](https://github.com/davidtvs/PyTorch-ENet/tree/master/data): Contains instructions on how to download the datasets and the code that handles data loading.
-- [``metric``](https://github.com/davidtvs/PyTorch-ENet/tree/master/metric): Evaluation-related metrics.
-- [``models``](https://github.com/davidtvs/PyTorch-ENet/tree/master/models): ENet model definition.
-- [``save``](https://github.com/davidtvs/PyTorch-ENet/tree/master/save): By default, ``main.py`` will save models in this folder. The pre-trained models can also be found here.
-
-### Files
-
-- [``args.py``](https://github.com/davidtvs/PyTorch-ENet/blob/master/args.py): Contains all command-line options.
-- [``main.py``](https://github.com/davidtvs/PyTorch-ENet/blob/master/main.py): Main script file used for training and/or testing the model.
-- [``test.py``](https://github.com/davidtvs/PyTorch-ENet/blob/master/test.py): Defines the ``Test`` class which is responsible for testing the model.
-- [``train.py``](https://github.com/davidtvs/PyTorch-ENet/blob/master/train.py): Defines the ``Train`` class which is responsible for training the model.
-- [``transforms.py``](https://github.com/davidtvs/PyTorch-ENet/blob/master/transforms.py): Defines image transformations to convert an RGB image encoding classes to a ``torch.LongTensor`` and vice versa.
+Original Repository
+Forked from: davidtvs/PyTorch-ENet
