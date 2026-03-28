@@ -18,7 +18,8 @@ def batch_transform(batch, transform):
     # 1. torch.unbind removes the 0-dimension of "labels" and returns a tuple of
     # all slices along that dimension
     # 2. the transform is applied to each slice
-    transf_slices = [transform(tensor) for tensor in torch.unbind(batch)]
+    # transf_slices = [transform(tensor) for tensor in torch.unbind(batch)]
+    transf_slices = [transform(tensor.cpu()) for tensor in torch.unbind(batch)]
 
     return torch.stack(transf_slices)
 
@@ -89,33 +90,69 @@ def save_checkpoint(model, optimizer, epoch, miou, args):
         summary_file.write("Mean IoU: {0}\n". format(miou))
 
 
-def load_checkpoint(model, optimizer, folder_dir, filename):
-    """Saves the model in a specified directory with a specified name.save
+# def load_checkpoint(model, optimizer, folder_dir, filename):
+#     """Saves the model in a specified directory with a specified name.save
+
+#     Keyword arguments:
+#     - model (``nn.Module``): The stored model state is copied to this model
+#     instance.
+#     - optimizer (``torch.optim``): The stored optimizer state is copied to this
+#     optimizer instance.
+#     - folder_dir (``string``): The path to the folder where the saved model
+#     state is located.
+#     - filename (``string``): The model filename.
+
+#     Returns:
+#     The epoch, mean IoU, ``model``, and ``optimizer`` loaded from the
+#     checkpoint.
+
+#     """
+#     assert os.path.isdir(
+#         folder_dir), "The directory \"{0}\" doesn't exist.".format(folder_dir)
+
+#     # Create folder to save model and information
+#     model_path = os.path.join(folder_dir, filename)
+#     assert os.path.isfile(
+#         model_path), "The model file \"{0}\" doesn't exist.".format(filename)
+
+#     # Load the stored model parameters to the model instance
+#     checkpoint = torch.load(model_path, map_location=device, weights_only=False)
+#     # checkpoint = torch.load(model_path)
+#     model.load_state_dict(checkpoint['state_dict'])
+#     optimizer.load_state_dict(checkpoint['optimizer'])
+#     epoch = checkpoint['epoch']
+#     miou = checkpoint['miou']
+
+#     return model, optimizer, epoch, miou
+
+def load_checkpoint(model, optimizer, folder_dir, filename, device=None):
+    """Loads the model from a checkpoint.
 
     Keyword arguments:
     - model (``nn.Module``): The stored model state is copied to this model
-    instance.
     - optimizer (``torch.optim``): The stored optimizer state is copied to this
-    optimizer instance.
     - folder_dir (``string``): The path to the folder where the saved model
-    state is located.
     - filename (``string``): The model filename.
+    - device (``torch.device``, optional): Device to map the checkpoint to.
 
     Returns:
     The epoch, mean IoU, ``model``, and ``optimizer`` loaded from the
     checkpoint.
-
     """
     assert os.path.isdir(
         folder_dir), "The directory \"{0}\" doesn't exist.".format(folder_dir)
 
-    # Create folder to save model and information
+    # Create full path
     model_path = os.path.join(folder_dir, filename)
     assert os.path.isfile(
         model_path), "The model file \"{0}\" doesn't exist.".format(filename)
 
-    # Load the stored model parameters to the model instance
-    checkpoint = torch.load(model_path)
+    # Updated for PyTorch 2.6+ compatibility
+    if device is None:
+        device = torch.device("cpu")   # fallback to CPU
+
+    checkpoint = torch.load(model_path, map_location=device, weights_only=False)
+
     model.load_state_dict(checkpoint['state_dict'])
     optimizer.load_state_dict(checkpoint['optimizer'])
     epoch = checkpoint['epoch']

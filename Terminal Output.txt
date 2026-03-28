@@ -1,0 +1,997 @@
+
+Training...
+
+Warning: class_weights length (256) does not match num_classes (12). Using uniform weights.
+Warning: Could not load checkpoint (The model file "ENet_CamVid" doesn't exist.). Starting from scratch.       
+
+>>>> [Epoch: 0] Training
+>>>> [Epoch: 0] Avg. loss: 2.1112 | Mean IoU: 0.0817
+>>>> [Epoch: 1] Training
+>>>> [Epoch: 1] Avg. loss: 1.4466 | Mean IoU: 0.1571
+>>>> [Epoch: 2] Training
+>>>> [Epoch: 2] Avg. loss: 1.0621 | Mean IoU: 0.1847
+>>>> [Epoch: 3] Training
+>>>> [Epoch: 3] Avg. loss: 0.8553 | Mean IoU: 0.2361
+>>>> [Epoch: 4] Training
+>>>> [Epoch: 4] Avg. loss: 0.7208 | Mean IoU: 0.2825
+>>>> [Epoch: 5] Training
+>>>> [Epoch: 5] Avg. loss: 0.6490 | Mean IoU: 0.2966
+>>>> [Epoch: 6] Training
+>>>> [Epoch: 6] Avg. loss: 0.5895 | Mean IoU: 0.3093
+>>>> [Epoch: 7] Training
+>>>> [Epoch: 7] Avg. loss: 0.5420 | Mean IoU: 0.3202
+>>>> [Epoch: 8] Training
+>>>> [Epoch: 8] Avg. loss: 0.5187 | Mean IoU: 0.3288
+>>>> [Epoch: 9] Training
+>>>> [Epoch: 9] Avg. loss: 0.4821 | Mean IoU: 0.3451
+>>>> [Epoch: 9] Validation
+>>>> [Epoch: 9] Avg. loss: 0.4486 | Mean IoU: 0.3605
+sky: 0.9129
+building: 0.7914
+pole: 0.0000
+road: 0.9450
+pavement: 0.5877
+tree: 0.7248
+sign_symbol: 0.0000
+fence: 0.0000
+car: 0.3642
+pedestrian: 0.0000
+bicyclist: 0.0000
+unlabeled: 0.0000
+
+Best model thus far. Saving...
+
+>>>> [Epoch: 10] Training
+>>>> [Epoch: 10] Avg. loss: 0.4680 | Mean IoU: 0.3534
+>>>> [Epoch: 11] Training
+>>>> [Epoch: 11] Avg. loss: 0.4428 | Mean IoU: 0.3652
+>>>> [Epoch: 12] Training
+>>>> [Epoch: 12] Avg. loss: 0.4215 | Mean IoU: 0.3738
+>>>> [Epoch: 13] Training
+>>>> [Epoch: 13] Avg. loss: 0.4049 | Mean IoU: 0.3799
+>>>> [Epoch: 14] Training
+>>>> [Epoch: 14] Avg. loss: 0.4164 | Mean IoU: 0.3851
+>>>> [Epoch: 15] Training
+>>>> [Epoch: 15] Avg. loss: 0.4295 | Mean IoU: 0.3768
+>>>> [Epoch: 16] Training
+>>>> [Epoch: 16] Avg. loss: 0.3897 | Mean IoU: 0.3941
+>>>> [Epoch: 17] Training
+>>>> [Epoch: 17] Avg. loss: 0.3959 | Mean IoU: 0.3964
+>>>> [Epoch: 18] Training
+>>>> [Epoch: 18] Avg. loss: 0.3862 | Mean IoU: 0.3997
+>>>> [Epoch: 19] Training
+>>>> [Epoch: 19] Avg. loss: 0.3724 | Mean IoU: 0.4050
+>>>> [Epoch: 19] Validation
+>>>> [Epoch: 19] Avg. loss: 0.3440 | Mean IoU: 0.4155
+sky: 0.9091
+building: 0.8201
+pole: 0.0000
+road: 0.9528
+pavement: 0.7693
+tree: 0.7588
+sign_symbol: 0.0000
+fence: 0.0814
+car: 0.6946
+pedestrian: 0.0000
+bicyclist: 0.0000
+unlabeled: 0.0000
+
+Best model thus far. Saving...
+
+>>>> [Epoch: 20] Training
+>>>> [Epoch: 20] Avg. loss: 0.3595 | Mean IoU: 0.4066
+>>>> [Epoch: 21] Training
+>>>> [Epoch: 21] Avg. loss: 0.3439 | Mean IoU: 0.4150
+>>>> [Epoch: 22] Training
+>>>> [Epoch: 22] Avg. loss: 0.3301 | Mean IoU: 0.4214
+>>>> [Epoch: 23] Training
+>>>> [Epoch: 23] Avg. loss: 0.3212 | Mean IoU: 0.4284
+>>>> [Epoch: 24] Training
+>>>> [Epoch: 24] Avg. loss: 0.3153 | Mean IoU: 0.4308
+>>>> [Epoch: 25] Training
+>>>> [Epoch: 25] Avg. loss: 0.2989 | Mean IoU: 0.4396
+>>>> [Epoch: 26] Training
+>>>> [Epoch: 26] Avg. loss: 0.2875 | Mean IoU: 0.4495
+>>>> [Epoch: 27] Training
+>>>> [Epoch: 27] Avg. loss: 0.3038 | Mean IoU: 0.4437
+>>>> [Epoch: 28] Training
+>>>> [Epoch: 28] Avg. loss: 0.2895 | Mean IoU: 0.4512
+>>>> [Epoch: 29] Training
+>>>> [Epoch: 29] Avg. loss: 0.2967 | Mean IoU: 0.4566
+>>>> [Epoch: 29] Validation
+>>>> [Epoch: 29] Avg. loss: 0.3028 | Mean IoU: 0.4504
+sky: 0.9167
+building: 0.8501
+pole: 0.0000
+road: 0.9547
+pavement: 0.7700
+tree: 0.7629
+sign_symbol: 0.0000
+fence: 0.3975
+car: 0.7525
+pedestrian: 0.0000
+bicyclist: 0.0000
+unlabeled: 0.0000
+
+Best model thus far. Saving...
+
+>>>> [Epoch: 30] Training
+>>>> [Epoch: 30] Avg. loss: 0.2993 | Mean IoU: 0.4536
+>>>> [Epoch: 31] Training
+>>>> [Epoch: 31] Avg. loss: 0.2750 | Mean IoU: 0.4616
+>>>> [Epoch: 32] Training
+>>>> [Epoch: 32] Avg. loss: 0.2671 | Mean IoU: 0.4665
+>>>> [Epoch: 33] Training
+>>>> [Epoch: 33] Avg. loss: 0.2951 | Mean IoU: 0.4678
+>>>> [Epoch: 34] Training
+>>>> [Epoch: 34] Avg. loss: 0.2892 | Mean IoU: 0.4590
+>>>> [Epoch: 35] Training
+>>>> [Epoch: 35] Avg. loss: 0.2595 | Mean IoU: 0.4677
+>>>> [Epoch: 36] Training
+>>>> [Epoch: 36] Avg. loss: 0.2581 | Mean IoU: 0.4741
+>>>> [Epoch: 37] Training
+>>>> [Epoch: 37] Avg. loss: 0.2512 | Mean IoU: 0.4803
+>>>> [Epoch: 38] Training
+>>>> [Epoch: 38] Avg. loss: 0.2524 | Mean IoU: 0.4756
+>>>> [Epoch: 39] Training
+>>>> [Epoch: 39] Avg. loss: 0.2433 | Mean IoU: 0.4843
+>>>> [Epoch: 39] Validation
+>>>> [Epoch: 39] Avg. loss: 0.2804 | Mean IoU: 0.4693
+sky: 0.9195
+building: 0.8589
+pole: 0.0000
+road: 0.9577
+pavement: 0.7851
+tree: 0.7736
+sign_symbol: 0.0000
+fence: 0.4614
+car: 0.7660
+pedestrian: 0.0051
+bicyclist: 0.1044
+unlabeled: 0.0000
+
+Best model thus far. Saving...
+
+>>>> [Epoch: 40] Training
+>>>> [Epoch: 40] Avg. loss: 0.2387 | Mean IoU: 0.4957
+>>>> [Epoch: 41] Training
+>>>> [Epoch: 41] Avg. loss: 0.2335 | Mean IoU: 0.5041
+>>>> [Epoch: 42] Training
+>>>> [Epoch: 42] Avg. loss: 0.2791 | Mean IoU: 0.5114
+>>>> [Epoch: 43] Training
+>>>> [Epoch: 43] Avg. loss: 0.3402 | Mean IoU: 0.4570
+>>>> [Epoch: 44] Training
+>>>> [Epoch: 44] Avg. loss: 0.2621 | Mean IoU: 0.4957
+>>>> [Epoch: 45] Training
+>>>> [Epoch: 45] Avg. loss: 0.2574 | Mean IoU: 0.5079
+>>>> [Epoch: 46] Training
+>>>> [Epoch: 46] Avg. loss: 0.2455 | Mean IoU: 0.5123
+>>>> [Epoch: 47] Training
+>>>> [Epoch: 47] Avg. loss: 0.2322 | Mean IoU: 0.5253
+>>>> [Epoch: 48] Training
+>>>> [Epoch: 48] Avg. loss: 0.2410 | Mean IoU: 0.5295
+>>>> [Epoch: 49] Training
+>>>> [Epoch: 49] Avg. loss: 0.2298 | Mean IoU: 0.5423
+>>>> [Epoch: 49] Validation
+>>>> [Epoch: 49] Avg. loss: 0.2731 | Mean IoU: 0.5322
+sky: 0.9158
+building: 0.8612
+pole: 0.0016
+road: 0.9600
+pavement: 0.8027
+tree: 0.7696
+sign_symbol: 0.1284
+fence: 0.5146
+car: 0.8403
+pedestrian: 0.0888
+bicyclist: 0.5036
+unlabeled: 0.0000
+
+Best model thus far. Saving...
+
+>>>> [Epoch: 50] Training
+>>>> [Epoch: 50] Avg. loss: 0.2248 | Mean IoU: 0.5487
+>>>> [Epoch: 51] Training
+>>>> [Epoch: 51] Avg. loss: 0.2123 | Mean IoU: 0.5601
+>>>> [Epoch: 52] Training
+>>>> [Epoch: 52] Avg. loss: 0.2106 | Mean IoU: 0.5723
+>>>> [Epoch: 53] Training
+>>>> [Epoch: 53] Avg. loss: 0.2460 | Mean IoU: 0.5437
+>>>> [Epoch: 54] Training
+>>>> [Epoch: 54] Avg. loss: 0.2112 | Mean IoU: 0.5737
+>>>> [Epoch: 55] Training
+>>>> [Epoch: 55] Avg. loss: 0.2018 | Mean IoU: 0.5805
+>>>> [Epoch: 56] Training
+>>>> [Epoch: 56] Avg. loss: 0.1928 | Mean IoU: 0.5980
+>>>> [Epoch: 57] Training
+>>>> [Epoch: 57] Avg. loss: 0.1935 | Mean IoU: 0.6008
+>>>> [Epoch: 58] Training
+>>>> [Epoch: 58] Avg. loss: 0.2040 | Mean IoU: 0.5904
+>>>> [Epoch: 59] Training
+>>>> [Epoch: 59] Avg. loss: 0.2110 | Mean IoU: 0.5903
+>>>> [Epoch: 59] Validation
+>>>> [Epoch: 59] Avg. loss: 0.2615 | Mean IoU: 0.5703
+sky: 0.9076
+building: 0.8681
+pole: 0.0208
+road: 0.9610
+pavement: 0.8060
+tree: 0.7764
+sign_symbol: 0.3472
+fence: 0.5269
+car: 0.8269
+pedestrian: 0.2358
+bicyclist: 0.5671
+unlabeled: 0.0000
+
+Best model thus far. Saving...
+
+>>>> [Epoch: 60] Training
+>>>> [Epoch: 60] Avg. loss: 0.1939 | Mean IoU: 0.6063
+>>>> [Epoch: 61] Training
+>>>> [Epoch: 61] Avg. loss: 0.1832 | Mean IoU: 0.6115
+>>>> [Epoch: 62] Training
+>>>> [Epoch: 62] Avg. loss: 0.1792 | Mean IoU: 0.6203
+>>>> [Epoch: 63] Training
+>>>> [Epoch: 63] Avg. loss: 0.1799 | Mean IoU: 0.6281
+>>>> [Epoch: 64] Training
+>>>> [Epoch: 64] Avg. loss: 0.1815 | Mean IoU: 0.6256
+>>>> [Epoch: 65] Training
+>>>> [Epoch: 65] Avg. loss: 0.1969 | Mean IoU: 0.6193
+>>>> [Epoch: 66] Training
+>>>> [Epoch: 66] Avg. loss: 0.1917 | Mean IoU: 0.6155
+>>>> [Epoch: 67] Training
+>>>> [Epoch: 67] Avg. loss: 0.1915 | Mean IoU: 0.6221
+>>>> [Epoch: 68] Training
+>>>> [Epoch: 68] Avg. loss: 0.1973 | Mean IoU: 0.6184
+>>>> [Epoch: 69] Training
+>>>> [Epoch: 69] Avg. loss: 0.2183 | Mean IoU: 0.6011
+>>>> [Epoch: 69] Validation
+>>>> [Epoch: 69] Avg. loss: 0.2442 | Mean IoU: 0.5927
+sky: 0.9243
+building: 0.8729
+pole: 0.0649
+road: 0.9613
+pavement: 0.8053
+tree: 0.7923
+sign_symbol: 0.4164
+fence: 0.5354
+car: 0.8318
+pedestrian: 0.3054
+bicyclist: 0.6024
+unlabeled: 0.0000
+
+Best model thus far. Saving...
+
+>>>> [Epoch: 70] Training
+>>>> [Epoch: 70] Avg. loss: 0.2079 | Mean IoU: 0.6259
+>>>> [Epoch: 71] Training
+>>>> [Epoch: 71] Avg. loss: 0.2210 | Mean IoU: 0.6019
+>>>> [Epoch: 72] Training
+>>>> [Epoch: 72] Avg. loss: 0.1927 | Mean IoU: 0.6165
+>>>> [Epoch: 73] Training
+>>>> [Epoch: 73] Avg. loss: 0.1783 | Mean IoU: 0.6322
+>>>> [Epoch: 74] Training
+>>>> [Epoch: 74] Avg. loss: 0.1729 | Mean IoU: 0.6415
+>>>> [Epoch: 75] Training
+>>>> [Epoch: 75] Avg. loss: 0.1755 | Mean IoU: 0.6417
+>>>> [Epoch: 76] Training
+>>>> [Epoch: 76] Avg. loss: 0.1672 | Mean IoU: 0.6477
+>>>> [Epoch: 77] Training
+>>>> [Epoch: 77] Avg. loss: 0.1646 | Mean IoU: 0.6519
+>>>> [Epoch: 78] Training
+>>>> [Epoch: 78] Avg. loss: 0.1610 | Mean IoU: 0.6542
+>>>> [Epoch: 79] Training
+>>>> [Epoch: 79] Avg. loss: 0.1638 | Mean IoU: 0.6534
+>>>> [Epoch: 79] Validation
+>>>> [Epoch: 79] Avg. loss: 0.2294 | Mean IoU: 0.6212
+sky: 0.9247
+building: 0.8850
+pole: 0.1179
+road: 0.9651
+pavement: 0.8219
+tree: 0.8004
+sign_symbol: 0.4979
+fence: 0.5945
+car: 0.8625
+pedestrian: 0.3467
+bicyclist: 0.6381
+unlabeled: 0.0000
+
+Best model thus far. Saving...
+
+>>>> [Epoch: 80] Training
+>>>> [Epoch: 80] Avg. loss: 0.1605 | Mean IoU: 0.6590
+>>>> [Epoch: 81] Training
+>>>> [Epoch: 81] Avg. loss: 0.1668 | Mean IoU: 0.6549
+>>>> [Epoch: 82] Training
+>>>> [Epoch: 82] Avg. loss: 0.2401 | Mean IoU: 0.5982
+>>>> [Epoch: 83] Training
+>>>> [Epoch: 83] Avg. loss: 0.1857 | Mean IoU: 0.6367
+>>>> [Epoch: 84] Training
+>>>> [Epoch: 84] Avg. loss: 0.1647 | Mean IoU: 0.6548
+>>>> [Epoch: 85] Training
+>>>> [Epoch: 85] Avg. loss: 0.1600 | Mean IoU: 0.6618
+>>>> [Epoch: 86] Training
+>>>> [Epoch: 86] Avg. loss: 0.1569 | Mean IoU: 0.6638
+>>>> [Epoch: 87] Training
+>>>> [Epoch: 87] Avg. loss: 0.1514 | Mean IoU: 0.6726
+>>>> [Epoch: 88] Training
+>>>> [Epoch: 88] Avg. loss: 0.1490 | Mean IoU: 0.6750
+>>>> [Epoch: 89] Training
+>>>> [Epoch: 89] Avg. loss: 0.1479 | Mean IoU: 0.6775
+>>>> [Epoch: 89] Validation
+>>>> [Epoch: 89] Avg. loss: 0.2335 | Mean IoU: 0.6230
+sky: 0.9255
+building: 0.8834
+pole: 0.1540
+road: 0.9640
+pavement: 0.8182
+tree: 0.7987
+sign_symbol: 0.5011
+fence: 0.5702
+car: 0.8670
+pedestrian: 0.3485
+bicyclist: 0.6449
+unlabeled: 0.0000
+
+Best model thus far. Saving...
+
+>>>> [Epoch: 90] Training
+>>>> [Epoch: 90] Avg. loss: 0.1465 | Mean IoU: 0.6819
+>>>> [Epoch: 91] Training
+>>>> [Epoch: 91] Avg. loss: 0.1434 | Mean IoU: 0.6800
+>>>> [Epoch: 92] Training
+>>>> [Epoch: 92] Avg. loss: 0.1443 | Mean IoU: 0.6838
+>>>> [Epoch: 93] Training
+>>>> [Epoch: 93] Avg. loss: 0.1384 | Mean IoU: 0.6881
+>>>> [Epoch: 94] Training
+>>>> [Epoch: 94] Avg. loss: 0.1416 | Mean IoU: 0.6846
+>>>> [Epoch: 95] Training
+>>>> [Epoch: 95] Avg. loss: 0.1551 | Mean IoU: 0.6870
+>>>> [Epoch: 96] Training
+>>>> [Epoch: 96] Avg. loss: 0.1602 | Mean IoU: 0.6695
+>>>> [Epoch: 97] Training
+>>>> [Epoch: 97] Avg. loss: 0.1624 | Mean IoU: 0.6699
+>>>> [Epoch: 98] Training
+>>>> [Epoch: 98] Avg. loss: 0.1565 | Mean IoU: 0.6867
+>>>> [Epoch: 99] Training
+>>>> [Epoch: 99] Avg. loss: 0.1792 | Mean IoU: 0.6551
+>>>> [Epoch: 99] Validation
+>>>> [Epoch: 99] Avg. loss: 0.2400 | Mean IoU: 0.6148
+sky: 0.9195
+>>>> [Epoch: 94] Avg. loss: 0.1416 | Mean IoU: 0.6846
+>>>> [Epoch: 95] Training
+>>>> [Epoch: 95] Avg. loss: 0.1551 | Mean IoU: 0.6870
+>>>> [Epoch: 96] Training
+>>>> [Epoch: 96] Avg. loss: 0.1602 | Mean IoU: 0.6695
+>>>> [Epoch: 97] Training
+>>>> [Epoch: 97] Avg. loss: 0.1624 | Mean IoU: 0.6699
+>>>> [Epoch: 98] Training
+>>>> [Epoch: 98] Avg. loss: 0.1565 | Mean IoU: 0.6867
+>>>> [Epoch: 99] Training
+>>>> [Epoch: 99] Avg. loss: 0.1792 | Mean IoU: 0.6551
+>>>> [Epoch: 99] Validation
+>>>> [Epoch: 99] Avg. loss: 0.2400 | Mean IoU: 0.6148
+sky: 0.9195
+building: 0.8731
+pole: 0.1879
+road: 0.9608
+pavement: 0.8070
+tree: 0.7751
+sign_symbol: 0.4822
+fence: 0.5474
+car: 0.8497
+pedestrian: 0.3573
+bicyclist: 0.6174
+unlabeled: 0.0000
+PS D:\Comp6011 report 1\PyTorch-ENet> python main.py -m test --save-dir save/ENet_CamVid_train --name ENet_CamVid --dataset camvid --dataset-dir datasets/CamVid/ --batch-size 8 --workers 0
+Using device: cpu
+
+Loading dataset...
+
+Selected dataset: camvid
+Dataset directory: datasets/CamVid/
+Save directory: save/ENet_CamVid_train
+Number of classes to predict: 12
+Train dataset size: 369
+Validation dataset size: 100
+D:\Comp6011 report 1\PyTorch-ENet\transforms.py:60: UserWarning: The given buffer is not writable, and PyTorch does not support non-writable tensors. This means you can write to the underlying (supposedly non-writable) buffer using the tensor. You may want to copy the buffer to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\utils\tensor_new.cpp:1566.)        
+  img = torch.frombuffer(pic.tobytes(), dtype=torch.uint8).clone()
+Image size: torch.Size([8, 3, 360, 480])
+Label size: torch.Size([8, 360, 480])
+Class-color encoding: OrderedDict({'sky': (128, 128, 128), 'building': (128, 0, 0), 'pole': (192, 192, 128), 'road': (128, 64, 128), 'pavement': (60, 40, 222), 'tree': (128, 128, 0), 'sign_symbol': (192, 128, 128), 'fence': (64, 64, 128), 'car': (64, 0, 128), 'pedestrian': (64, 64, 0), 'bicyclist': (0, 128, 192), 'unlabeled': (0, 0, 0)})
+
+Weighing technique: ENet
+Computing class weights...
+(this can take a while depending on the dataset size)
+Class weights: tensor([ 6.3378,  4.3097, 33.4152,  3.5539, 11.1080,  8.2240, 40.6242, 27.7241,
+        20.0111, 38.6743, 40.9402,  0.0000, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983,
+        50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 50.4983, 15.8138])
+ENet(
+  (initial_block): InitialBlock(
+    (main_branch): Conv2d(3, 13, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+    (ext_branch): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (batch_norm): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (downsample1_0): DownsamplingBottleneck(
+    (main_max1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (ext_conv1): Sequential(
+      (0): Conv2d(16, 4, kernel_size=(2, 2), stride=(2, 2), bias=False)
+      (1): BatchNorm2d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(4, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.01, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (regular1_1): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.01, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (regular1_2): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.01, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (regular1_3): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.01, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (regular1_4): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.01, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (downsample2_0): DownsamplingBottleneck(
+    (main_max1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (ext_conv1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(2, 2), stride=(2, 2), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(16, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (regular2_1): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (dilated2_2): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)      
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (asymmetric2_3): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+      (3): Conv2d(32, 32, kernel_size=(1, 5), stride=(1, 1), padding=(0, 2), bias=False)
+      (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (dilated2_4): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)      
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (regular2_5): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (dilated2_6): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8), bias=False)      
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (asymmetric2_7): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+      (3): Conv2d(32, 32, kernel_size=(1, 5), stride=(1, 1), padding=(0, 2), bias=False)
+      (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (dilated2_8): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(16, 16), dilation=(16, 16), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (regular3_0): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (dilated3_1): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)      
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (asymmetric3_2): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+      (3): Conv2d(32, 32, kernel_size=(1, 5), stride=(1, 1), padding=(0, 2), bias=False)
+      (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (dilated3_3): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)      
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (regular3_4): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (dilated3_5): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(8, 8), dilation=(8, 8), bias=False)      
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (asymmetric3_6): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+      (3): Conv2d(32, 32, kernel_size=(1, 5), stride=(1, 1), padding=(0, 2), bias=False)
+      (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (dilated3_7): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(16, 16), dilation=(16, 16), bias=False)  
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): PReLU(num_parameters=1)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): PReLU(num_parameters=1)
+  )
+  (upsample4_0): UpsamplingBottleneck(
+    (main_conv1): Sequential(
+      (0): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (main_unpool1): MaxUnpool2d(kernel_size=(2, 2), stride=(2, 2), padding=(0, 0))
+    (ext_conv1): Sequential(
+      (0): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_tconv1): ConvTranspose2d(32, 32, kernel_size=(2, 2), stride=(2, 2), bias=False)
+    (ext_tconv1_bnorm): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)        
+    (ext_tconv1_activation): ReLU()
+    (ext_conv2): Sequential(
+      (0): Conv2d(32, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): ReLU()
+  )
+  (regular4_1): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): ReLU()
+  )
+  (regular4_2): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): ReLU()
+  )
+  (upsample5_0): UpsamplingBottleneck(
+    (main_conv1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (main_unpool1): MaxUnpool2d(kernel_size=(2, 2), stride=(2, 2), padding=(0, 0))
+    (ext_conv1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_tconv1): ConvTranspose2d(16, 16, kernel_size=(2, 2), stride=(2, 2), bias=False)
+    (ext_tconv1_bnorm): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)        
+    (ext_tconv1_activation): ReLU()
+    (ext_conv2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): ReLU()
+  )
+  (regular5_1): RegularBottleneck(
+    (ext_conv1): Sequential(
+      (0): Conv2d(16, 4, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_conv2): Sequential(
+      (0): Conv2d(4, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_conv3): Sequential(
+      (0): Conv2d(4, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+    )
+    (ext_regul): Dropout2d(p=0.1, inplace=False)
+    (out_activation): ReLU()
+  )
+  (transposed_conv): ConvTranspose2d(16, 12, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)    
+)
+
+Testing...
+
+Using CrossEntropyLoss with ignore_index=255 (class_weights mismatch)
+>>>> Running test dataset
+>>>> Avg. loss: 0.3135 | Mean IoU: 0.5647
+sky: 0.9192
+building: 0.8345
+pole: 0.1300
+road: 0.9499
+pavement: 0.7899
+tree: 0.7399
+sign_symbol: 0.4203
+fence: 0.4843
+car: 0.8534
+pedestrian: 0.2659
+bicyclist: 0.3894
+unlabeled: 0.0000
