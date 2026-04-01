@@ -112,3 +112,11 @@ venv.bak/
 .vscode/
 *.code-workspace
 .devcontainer
+
+venv/
+__pycache__/
+*.pyc
+CamVid/
+data/
+*.pth
+*.pt
